@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arq Cerramientos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="icon" type="image/jpg" href="img/logo.PNG">
+
+    <script src="https://kit.fontawesome.com/d783c97bf7.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+
+    <style>
+        .ultimo + div{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero" >
+        <nav class="nav__hero" data-aos="fade-down" data-aos-duration="2000">
+            <div class="container nav__container">
+                <div class="logo">
+                    <h2 class="logo__name">Cerramientos Arquitectonicos <span class="point">.</span></h2>
+                </div>
+                <button class="nav__bars"><i class="fa fa-bars"></i></button>
+                <div class="links">
+                    <a href="index.html" class="link link--active">Inicio</a>
+                    <a href="paginas/nosotros.html" class="link">Nosotros</a>
+                    <a href="paginas/proyectos.html" class="link">Proyectos</a>
+                    <a href="paginas/contacto.html" class="link ">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container hero__main">
+            <div class="hero__textos" data-aos="fade-right" data-aos-duration="2000">
+                <h1 class="title">Le damos el <span class="title--active">toque a tu construccion</span></h1>
+                <p class="copy">Ventanas y Puertas, PVC y Aluminio, Fachadas de Vidrio Templado y ACM <span class="copy__active">.</span></p>
+                <a href="https://wa.me/50259820561?text=Hola%20necesito%20una%20cotización" class="cta">Ordena tu Cotizacion</a>
+            </div>
+            <img src="img/fondo.jpg" class="mockup" data-aos="fade-left" data-aos-duration="2000">
+        </section>
+    </header>
+
+    <main>
+        <section class="servicios">
+            <div class="container__se  container">
+                <div class="background-se">
+                    <img src="img/servicios.jpeg"  class="img__servicios" data-aos="fade-down-right" data-aos-duration="1500">
+                </div>
+                <div class="lista-se" data-aos="fade-down-left" data-aos-duration="1500">
+                    <h2 class="subtitle">Servicios</h2>
+                    <ul class="servicios__list">
+                        <li> Diseño.</li>
+                        <li> Planificación.</li>
+                        <li> Ejecución de proyectos.</li>
+                        <li> fachadas de vidrio.</li>
+                        <li> ACM.</li>
+                        <li> Tabla roca.</li>
+                        <li> Puertas  y Ventanas de PVC: blanco, imitación madera, aluminio euro y vidrio templado.</li>
+                        <li> Tabiques de tabla yeso.</li>
+                        <li> Diseños arquitectónicos con tecnología CNC.</li>
+                        <li> Pergolas de madera, aluminio pvc y de vidrio </li> 
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="proyectos">
+            <div class="container container-pro">
+                <h2 class="subtitle" data-aos="fade-down">Proyectos <span class="point" data-aos="fade-down">.</span></h2>
+                <p class="copy__section" data-aos="fade-down"> Ofrecemos elegancia para tus ambientes</p>
+
+                <article class="container-cards" >
+                    <div class="card" data-aos="zoom-in-up" data-aos-duration="1500">
+                        <img src="img/fraijanes.jpeg" class="card__img" data-aos="flip-left" data-aos-duration="1500">
+                        <div class="cards__text">
+                            <h3 class="card__title">Fraijanes</h3>
+                            <a href="paginas/galerias/galeria_fraijanes.html" class="bottom-ver"><p class="p-ver">Ver</p></a>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="zoom-in-up" data-aos-duration="1500">
+                        <img src="img/imagen.jpeg" class="card__img" data-aos="flip-left" data-aos-duration="1500">
+                        <div class="cards__text">
+                            <h3 class="card__title">Gastro Avances</span></h3>
+                            <a href="paginas/galerias/galeria_grastoAvances.html" class="bottom-ver"><p class="p-ver">Ver</p></a>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="zoom-in-up" data-aos-duration="1500">
+                        <img src="img/imagen1.jpeg" class="card__img" data-aos="flip-left" data-aos-duration="1500">
+                        <div class="cards__text">
+                            <h3 class="card__title">La Fontana</h3>
+                            <a href="paginas/galerias/galeria_LaFontana.html" class="bottom-ver"><p class="p-ver">Ver</p></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container container-contacto">
+            <div class="container-subtitle">
+                <h2 class="subtitle-ct" data-aos="zoom-in-down" data-aos-duration="1500">CONTACTO</h2>
+            </div>
+            <section class="container-ct">
+                <div class="contacto" data-aos="fade-up" data-aos-duration="1500">
+                    <h3 class="name-empresa">Cerramientos Arquitectonicos</h3>
+                    <h3 class="otro-subtitle">Direccion</h3>
+                    <p class="descripcion-ct">1 av 2-12 zona 5 de Fraijanes, Guatemala</p>
+                    <h3 class="otro-subtitle">Telefono</h3>
+                    <p class="descripcion-ct">Telefono: 3320-2918 <br>Whatsapp: 5982-0561</p>
+                    <h3 class="otro-subtitle">Horario</h3>
+                    <p class="descripcion-ct">Lunes-Viernes de 8:00 A.M a 9:00 P.M <br> Sabado-Domingo de 10:00 A.M a 6 P.M</p>
+                </div>
+                <div class="formulario" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="img/logoContacto.PNG" class="logo-contacto" alt="">
+                    <div class="bottom-redes" >
+                        <a href="https://wa.me/50259820561?text=Hola%20necesito%20una%20cotización" class="whatsapp" ><i class="fab fa-whatsapp-square" ></i>Whatsapp</a>
+                        <a href="https://www.facebook.com/Cerramientos-Arquitect%C3%B3nicos-106082741460259" class="Facebook "><i class="fab fa-facebook-square"></i>Facebook</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <div class="ultimo"></div>
+</body>
+</html>

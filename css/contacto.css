@@ -1,0 +1,309 @@
+:root{
+    
+    --shadow: 0 8px 8px;
+    --color_shadow: #00000033;
+    --color_rojo: #ad050a;
+    --naranja: #EC2801;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0;
+    height: 100%;
+}
+.hero{
+    width: 100%;
+    max-height: 70px;
+    background: linear-gradient(180deg, #01011b 0%, #010124 100%);
+}
+
+.nav__hero{
+    background: #010124;
+    color: #fff;
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+.logo__name{
+    align-items: center;
+}
+
+.nav__bars{
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    background: none;
+    display: none;
+}
+
+
+.link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.link:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.link--active{
+    color: var(--color_rojo);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.point{
+    color: var(--color_rojo);
+}
+
+
+/* pie de pagina*/
+
+.contactanos{
+    background-image: url(../img/footer.jpg); 
+    height: 100%;
+    width: 100%;
+    padding: 130px 0;
+    background-size: cover;
+    position: relative;  
+}
+
+.contactanos:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+}
+
+.contactanos h2, h3, p, a, img{
+    position: relative;
+}
+
+.name-empresa{
+    padding: 10px 0;
+    color: #fff;
+    font-size: 25px;
+    border-bottom: 1px solid #fff;
+}
+
+.container-ct{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-contacto{
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 40px;
+}
+
+.otro-subtitle{
+    color: #fff;
+    padding: 10px 0;
+}
+
+.subtitle-ct{
+    font-family: 'Bodoni Moda', serif;
+    padding: 20px 60px;
+    font-size: 35px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.descripcion-ct{
+    color: #fff;
+    line-height: 1.5;
+}
+
+
+.Facebook{
+    padding: 10px 10px;
+    font-size: 25px;
+    border-radius: 20px;
+    background: rgb(9, 7, 138);
+    color: #fff;
+    text-decoration: none;
+}
+
+.whatsapp{
+    padding: 10px 10px;
+    font-size: 25px;
+    border-radius: 20px;
+    background: rgb(37, 167, 14);
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-facebook-square{
+    padding: 0 5px;
+}
+
+.fa-whatsapp-square{
+    padding: 0 5px;
+}
+
+@media screen and (max-width: 900px){
+    .whatsapp{
+        font-size: 20px;
+    }
+    .Facebook{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 794px){
+    .formulario{
+        display: flex;
+        flex-direction: column;   
+    }
+    .Facebook{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #2c3e50;
+        padding: 20px 0;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        height: 100vh;
+        /*bottom: 0;
+        right: 0;
+        left: 0;*/
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .link{
+        padding: 20px 0;
+    }
+
+    .link--active{
+        color: #fff;
+        font-weight: 300;
+        border-bottom: 2px solid #fff;
+    }
+    .nav__hero{
+        height: 60px;
+    }
+    .nav__bars{
+        display: block;
+    }
+
+    .nav__menu_visible{
+        left: 0;
+    }
+
+    .subtitle-ct{
+        font-size: 25px;
+    }
+    .name-empresa{
+       font-size: 20px;
+    }
+    .otro-subtitle{
+        font-size: 18px;
+    }
+    .descripcion-ct{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 704px){
+    .contactanos{
+        padding: 90px 0;
+    }
+    .container-ct{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 50px 30px;
+    }
+    .formulario{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:638px){
+    .logo__name{
+        font-size: 20px;
+    }
+    .nav__bars{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 579px){
+    .nav__hero{
+        height: 50px;
+    }
+    .links{
+        top:50px;
+    }
+    .logo__name{
+        font-size: 15px;
+    }    
+}
+
+@media screen and (max-width: 400px){
+
+    .subtitle-ct{
+        font-size: 20px;
+        padding: 20px 20px;
+    }
+    .name-empresa{
+       font-size: 18px;
+    }   
+
+    .whatsapp{
+        font-size: 17px;
+    }
+    .Facebook{
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,485 @@
+:root{
+    --rojo: #ad050a;
+    --azul: #010124;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0;
+    height: auto;
+}
+
+.hero{
+    width: 100%;
+    max-height: 70px;
+    background: linear-gradient(180deg, #01011b 0%, #010124 100%);
+}
+
+.nav__hero{
+    color: #fff;
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: #010124;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.nav__bars{
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    background: none;
+    display: none;
+}
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    padding: 0;
+}
+
+.punto{
+    color: #ad050a;
+    font-weight: 700;
+}
+
+.logo__name{
+    align-items: center;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    font-weight: 300;
+}
+.link:hover {
+    border-bottom: 2px solid #fff;
+}
+.link--active{
+    color: #ad050a;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nosotros{
+    background-image: url(../img/fraijanes.jpeg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    padding: 80px;
+    position: relative;
+    background-size: cover;
+}
+
+.nosotros:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--azul);
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+}
+
+.nosotros h1, h2, p, img{
+   position: relative;
+}
+
+
+.nosotros__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    height: 100%;
+    
+}
+
+.container-iconos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.name__icon{
+    width: 30%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.name__icon:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.3;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.text{
+    font-size: 12px;
+    text-align: center;
+}
+
+.num{
+    text-align: center;
+}
+
+.icono__img{
+    padding: 0 30%;
+}
+
+.title{
+    font-family: 'Bodoni Moda', serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-size: 42px;
+    color: #fff;
+}
+
+
+
+.subtitle{
+    color: var(--rojo);
+    padding: 8px 0;
+    font-size: 32px;
+}
+
+.texto{
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* ------- EQUIPO -------- */
+
+.equipo{
+    background: #fff;
+}
+
+.container__equ{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.equipo__textos{
+    width: 40%;
+}
+
+.nuestro-equipo{
+    font-size: 20px;
+}
+
+.subtitle-eq{
+    font-size: 35px;    
+    border-bottom: 1px solid var(--azul);
+    padding-bottom: 10px;
+}
+
+.equipo__img{
+    object-fit: cover;
+    width: 30%;
+    margin-top: 40px;
+}
+/* ------------------------ */
+
+footer{
+    background-image: url(../img/footer.jpg);  
+    background-size: cover;
+    position: relative;  
+}
+
+footer:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.container-contacto h2, h3, p, a{
+    position: relative;
+}
+
+.container-contacto{
+    padding: 0;
+    width: 90%;
+}
+
+.name-empresa{
+    padding: 10px 0;
+    color: #fff;
+    font-size: 25px;
+    border-bottom: 1px solid #fff;
+}
+
+.container-ct{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-contacto{
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 40px;
+}
+
+.otro-subtitle{
+    color: #fff;
+    padding: 10px 0;
+}
+
+.subtitle-ct{
+    font-family: 'Bodoni Moda', serif;
+    padding: 20px 0;
+    font-size: 35px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.descripcion-ct{
+    color: #fff;
+    line-height: 1.5;
+}
+
+.Facebook{
+    padding: 10px 10px;
+    font-size: 25px;
+    border-radius: 20px;
+    background: rgb(9, 7, 138);
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.whatsapp{
+    padding: 10px 10px;
+    font-size: 25px;
+    border-radius: 20px;
+    background: rgb(37, 167, 14);
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-facebook-square{
+    padding: 0 5px;
+}
+
+.fa-whatsapp-square{
+    padding: 0 5px;
+}
+
+@media screen and (max-width: 794px){
+    .formulario{
+        display: flex;
+        flex-direction: column;   
+    }
+    .Facebook{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #2c3e50;
+        padding: 20px 0;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        height: 100vh;
+        /*bottom: 0;
+        right: 0;
+        left: 0;*/
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .link{
+        padding: 20px 0;
+    }
+    .link--active{
+        color: #fff;
+        font-weight: 300;
+        border-bottom: 2px solid #fff;
+    }
+    .nav__bars{
+        display: block;
+    }
+    .nav__menu_visible{
+        left: 0;
+    }
+    .nav__hero{
+        height: 60px;
+    }
+
+    .nosotros{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .nosotros__texto{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .container-iconos{
+        width: 100%;
+
+    }
+
+    .subtitle-ct{
+        font-size: 25px;
+    }
+    .name-empresa{
+       font-size: 20px;
+    }
+    .otro-subtitle{
+        font-size: 18px;
+    }
+    .descripcion-ct{
+        font-size: 15px;
+    }
+    .whatsapp {
+        font-size: 20px;
+    }
+    .Facebook{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width:638px){
+    .logo__name{
+        font-size: 20px;
+    }
+    .nav__bars{
+        font-size: 20px;
+    }
+
+    .title{
+        font-size: 25px;
+    }
+    .subtitle{
+        font-size: 25px;
+    }
+    .texto{
+        font-size: 18px;
+    }
+    .num{
+        font-size: 20px;
+    }
+
+    .equipo__textos{
+        width: 50%;
+    }
+    .subtitle-eq{
+        font-size: 25px;
+    }
+    .nuestro-equipo{
+        font-size: 15px;
+    }
+
+    .container-ct{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .formulario{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 579px){
+    .nav__hero{
+        height: 50px;
+    }
+    .links{
+        top:50px;
+    }
+    .logo__name{
+        font-size: 15px;
+    }
+
+    .nosotros{
+        padding: 80px 20px;
+    }
+    .container-iconos{
+        flex-direction: column;
+        width: 60%;
+    }
+    .name__icon{
+        width: 100%;
+    }
+    .icono__img{
+        padding: 0 35%;
+    }
+    
+    .container__equ{
+        flex-direction: column-reverse;
+    }
+    .equipo__textos{
+        width: 90%;
+    }
+     
+}
+
+@media screen and (max-width: 400px){
+    
+    .nosotros{
+        padding: 80px 20px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .texto{
+        font-size: 15px;
+    }
+    .num{
+        font-size: 15px;
+    }
+    .icono__img{
+        height: 35px;
+        padding: 0 40%;
+    }
+    
+    .subtitle-ct{
+        font-size: 20px;
+    }
+    .name-empresa{
+       font-size: 18px;
+    }
+    
+}

@@ -1,0 +1,667 @@
+:root{
+    
+    --shadow: 0 8px 8px;
+    --color_shadow: #00000033;
+    --color_rojo: #ad050a;
+    --naranja: #EC2801;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0;
+    height: auto;
+}
+
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #01011b 0%, #010124 100%);
+}
+
+.nav__hero{
+    background: #010124;
+    color: #fff;
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+.logo__img{
+    height: 65px;
+    text-align: center;
+}
+
+.logo__name{
+    align-items: center;
+}
+
+.nav__bars{
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    background: none;
+    display: none;
+}
+
+
+.link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.link:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.link--active{
+    color: var(--color_rojo);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.point{
+    color: var(--color_rojo);
+}
+
+.hero__main{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+
+.mockup{
+    object-fit: cover;
+    width: 58%;
+    max-height: 90vh;
+}
+
+.hero__textos{
+    width: 33%;
+    text-align: center;
+}
+
+.title{
+    font-size: 45px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.title--active{
+    color: var(--color_rojo) ;
+    font-weight: 700;
+}
+
+.copy{
+    font-size: 20px;
+    color: rgb(175, 175, 180);
+    text-shadow: var(--shadow) var(--color_shadow);
+    margin: 15px  0;
+}
+
+.copy__active{
+    font-weight: 700;
+
+}
+
+.cta{
+    padding: 20px 20px;
+    display: inline-block;
+    background: linear-gradient(180deg, #6b0101 0, var(--color_rojo) 100%);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 6px;
+    margin: auto;
+}
+/* -------- SERVICOS ------- */
+
+.servicios{
+    background-image: url(../img/servicios.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.servicios:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    opacity: 0.8;
+}
+.servicios h2, li, img{
+    position: relative;
+    color:#fff;
+}
+
+.container__se{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.servicios__list{
+    font-size: 20px;
+}
+
+.background-se{
+    width: 40%;
+}
+
+.img__servicios{
+    width: 100%;
+}
+
+.lista-se{
+    width: 40%;
+    line-height: 1.6;
+}
+
+
+
+.subtitle{
+    font-size: 42px;
+}
+
+.subtitle--modifier{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.copy__section{
+    color: var(--black2);
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 60px;
+}
+
+.copy__section--modifier{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    padding: 30px 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, #01011b 0%, #010124 100%);
+    border-radius: 10px;
+    position: relative;
+    text-align: right;
+    margin-bottom: 50px;
+    box-shadow: 0 0 6px var(--color_shadow);
+    padding: 10px;
+    height: 100%;
+}
+
+.card__img{
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+    margin-bottom: 15px;
+}
+
+.cards__text{
+    width: 90%;
+    margin: auto;
+}
+
+.card__list{
+    color: var(--gold2);
+    font-weight: 700;
+    margin: 25px 0 12px;
+    font-size: 18px;
+}
+.card__title-link{
+    text-decoration: none;
+}
+
+.card__title{
+    font-size: 30px;
+    color: #fff;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.bottom-ver{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.p-ver{
+    font-size: 20;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 2px 15px;
+}
+
+
+.card__copy{
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+
+.background__title{
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.container-pro{
+    padding: 50px;
+}
+
+main {
+    background: #fafafa;
+
+}
+/* pie de pagina*/
+
+footer{
+    background-image: url(../img/footer.jpg);  
+    background-size: cover;
+    position: relative;  
+}
+
+footer:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.container-contacto h2, h3, p, a{
+    position: relative;
+}
+
+.container-contacto{
+    padding: 0;
+    width: 90%;
+}
+
+.name-empresa{
+    padding: 10px 0;
+    color: #fff;
+    font-size: 25px;
+    border-bottom: 1px solid #fff;
+}
+
+.container-ct{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-contacto{
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 40px;
+}
+
+.otro-subtitle{
+    color: #fff;
+    padding: 10px 0;
+}
+
+.subtitle-ct{
+    font-family: 'Bodoni Moda', serif;
+    padding: 20px 0;
+    font-size: 35px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.descripcion-ct{
+    color: #fff;
+    line-height: 1.5;
+}
+
+
+.Facebook{
+    padding: 10px 10px;
+    font-size: 25px;
+    border-radius: 20px;
+    background: rgb(9, 7, 138);
+    color: #fff;
+    text-decoration: none;
+}
+
+.whatsapp{
+    padding: 10px 10px;
+    font-size: 25px;
+    border-radius: 20px;
+    background: rgb(37, 167, 14);
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook-square{
+    padding: 0 5px;
+}
+
+.fa-whatsapp-square{
+    padding: 0 5px;
+}
+
+@media screen and (max-width: 1176px) {
+    .container-pro{
+        padding: 40px 10px;
+    }
+    .card__title{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+   
+    .hero{
+        min-height: 500px;
+    }
+    
+    .hero__textos{
+        width: 40%;
+    }
+    .mockup{
+        width: 50%;
+    }
+    .title{
+        font-size: 35px;
+    }
+    .copy{
+        font-size: 18px;
+    }
+    .container-pro{
+        padding: 40px 10px;
+    }
+    
+
+}
+
+@media screen and (max-width: 790px){
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #2c3e50;
+        padding: 20px 0;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        height: 100vh;
+        /*bottom: 0;
+        right: 0;
+        left: 0;*/
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .link{
+        padding: 20px 0;
+    }
+
+    .link--active{
+        color: #fff;
+        font-weight: 300;
+        border-bottom: 2px solid #fff;
+    }
+
+    .nav__bars{
+        display: block;
+    }
+
+    .nav__menu_visible{
+        left: 0;
+    }
+
+    .contacto{
+        left: 0;
+    }
+
+    .nav__hero{
+        height: 60px;
+    }
+
+    .hero__main{
+        width: 100%;
+        background-image: url(../img/fondo.jpg);
+        background-size: cover;
+        justify-content: center;
+        position: relative;
+    }
+    .hero__main::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #010124;
+        opacity: 0.7;
+        position: absolute;
+    }
+    .hero__textos h1, p, a {
+        position: relative;
+    }
+    .hero__textos{
+        width: 60%;
+    }
+    .mockup{
+        display: none;
+    }
+    .copy{
+        color: #fff;
+    }
+
+    .container__se{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .lista-se{
+        width: 80%;
+    }
+    .background-se{
+        margin-top: 20px;
+        width: 60%;
+    }
+
+
+    
+    .card{
+        width: 45%;
+    }
+    .card__title{
+        font-size: 25px;
+    }
+
+    .subtitle-ct{
+        font-size: 25px;
+    }
+    .name-empresa{
+       font-size: 20px;
+    }
+    .otro-subtitle{
+        font-size: 18px;
+    }
+    .descripcion-ct{
+        font-size: 15px;
+    }
+    .whatsapp {
+        font-size: 20px;
+    }
+    .Facebook{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;   
+    }
+}
+
+@media screen and (max-width: 694px){
+    .card{
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .card__img{
+        width: 100%;
+        height: 80%;
+        margin: 0;
+        padding: 0;
+    }
+    .cards__text{
+        width: 80%;
+        padding: 0;
+        height: 20%;
+    }
+}
+
+@media screen and (max-width:638px){
+    .logo__name{
+        font-size: 20px;
+    }
+    .nav__bars{
+        font-size: 20px;
+    }
+
+    .container-pro{
+        padding: 40px 0;
+    }
+    
+
+    .container-ct{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .formulario{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 579px){
+    .nav__hero{
+        height: 50px;
+    }
+    .links{
+        top:50px;
+    }
+    .logo__name{
+        font-size: 15px;
+    }    
+}
+
+@media screen and (max-width: 400px){
+    .hero__main{
+        height: 500px;
+    }
+    .hero__textos{
+        width: 80%;
+    }
+    .title{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .title--active{
+        font-weight: 800;
+    }
+    .copy{
+        font-size: 15px;
+    }
+    .cta{
+        font-size: 15px;
+    }
+
+    
+    .subtitle{
+        font-size: 25px;
+    }
+    .servicios__list{
+        text-align: left;
+        font-size: 15px;
+    }
+    .lista-se{
+        width: 80%;
+    }
+    .background-se{
+        width: 60%;
+    }
+
+    .container-pro{
+        padding: 40px 0;
+    }
+    .subtitle{
+        font-size: 27px;
+        margin-bottom: 10px;
+    }
+    .copy__section{
+        font-size: 15px;
+        line-height: 1;
+    }
+    .card__title{
+        font-size: 25px;
+        padding:  0;
+    }
+    
+    .subtitle-ct{
+        font-size: 20px;
+    }
+    .name-empresa{
+       font-size: 18px;
+    }
+    
+}
+
